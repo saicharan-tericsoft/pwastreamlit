@@ -14,7 +14,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Register the service worker
-components.html("""
+st.markdown("""
 <script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/static/service-worker.js')
