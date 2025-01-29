@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
 # Set the page title and icon
 st.set_page_config(
@@ -13,7 +14,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Register the service worker
-st.markdown("""
+components.html("""
 <script>
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/static/service-worker.js')
